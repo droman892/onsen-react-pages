@@ -1,26 +1,27 @@
 import React, {Component} from 'react';
 import InputText from './InputText';
 import InputDate from './InputDate';
-import Checkbox from './Checkbox';
+import CheckboxFeature from './CheckboxFeature';
 import RadioList from './RadioList';
-import Select from './Select';
+import SelectFeature from './SelectFeature';
 import ButtonNavigator from './ButtonNavigator';
 
-
-
-import 'onsenui/css/onsenui.css';
-import 'onsenui/css/onsen-css-components.css';
 
 class Page1 extends Component {
 
 
     render() {
         return (
-            <InputText/>
+            <div>
+                <InputText/>
+                <InputDate/>
+                <CheckboxFeature/>
+                <RadioList/>
+                <SelectFeature/>
+                <ButtonNavigator/>
+            </div>
         )
     }
 }
-
-
 
 export default Page1;

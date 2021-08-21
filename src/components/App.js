@@ -1,21 +1,19 @@
 import React, {Component} from 'react';
+import * as onsen from 'react-onsenui';
+import InputText from './InputText';
 import Page1 from './Page1';
 import Page2 from './Page2';
-import { Page } from 'react-onsenui';
-import 'onsenui/css/onsenui.css';
-import 'onsenui/css/onsen-css-components.css';
-
 
 class App extends Component {
 
-
     render() {
         return (
-            <Page1/>
+            <div>
+                <Page1></Page1>
+            </div>
         )
     }
 }
-
 
 
 export default App;

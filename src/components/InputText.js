@@ -1,15 +1,17 @@
 import React, {Component} from 'react';
-import { Input } from 'react-onsenui';
-import 'onsenui/css/onsenui.css';
-import 'onsenui/css/onsen-css-components.css';
+import {Input} from 'react-onsenui';
+
 
 class InputText extends Component {
 
     render() {
-        return(
-            <Input/>
+        return (
+            <div>
+                <Input>Full Name: </Input>
+            </div>
         )
     }
 }
+
 
 export default InputText;
