@@ -6,7 +6,7 @@ class InputDate extends Component {
 
     render() {
         return (
-            <div>
+            <div id="inputDate" className="coreMargin">
                 <Input>Date: </Input>
             </div>
         )

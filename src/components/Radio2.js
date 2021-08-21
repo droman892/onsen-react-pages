@@ -6,8 +6,8 @@ class Radio2 extends Component {
 
     render() {
         return (
-            <div>
-                <Radio>This is Radio 2</Radio>
+            <div id="radio2" className="coreMargin">
+                <Radio>Retirement Planning</Radio>
             </div>
         )
     }

@@ -1,16 +1,18 @@
 import React, {Component} from 'react';
-import Select1 from './Select1';
-import Select2 from './Select2';
-import Select3 from './Select3';
+import {Select} from 'react-onsenui';
 
 class SelectFeature extends Component {
 
     render() {
         return (
             <div>
-                <Select1/>
-                <Select2/>
-                <Select3/>
+                <Select id="selectFeature" className="coreMargin">
+                    <option >How Should We Contact You?</option>
+                    <option>Text</option>
+                    <option>Phone</option>
+                    <option>Email</option>
+                </Select>
+
             </div>
         )
     }

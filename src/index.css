@@ -2,3 +2,16 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen';
   text-transform: uppercase;
 }
+
+.center-components {
+  width: 80vw;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.coreMargin {
+  margin-bottom: 5%;
+}

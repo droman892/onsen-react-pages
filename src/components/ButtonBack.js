@@ -2,15 +2,15 @@ import React, {Component} from 'react';
 import {Button} from 'react-onsenui';
 
 
-class ButtonNavigator extends Component {
+class ButtonBack extends Component {
 
     render() {
         return (
             <div>
-                <Button>Next</Button>
+                <Button>Back</Button>
             </div>
         )
     }
 }
 
-export default ButtonNavigator;
+export default ButtonBack;
