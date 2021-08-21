@@ -6,7 +6,7 @@ class ToolbarTop extends Component {
     render() {
         return (
             <Toolbar>
-                <div className="center">
+                <div className="center bold">
                     Intake Form
                 </div>
             </Toolbar>

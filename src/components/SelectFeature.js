@@ -7,7 +7,7 @@ class SelectFeature extends Component {
         return (
             <div>
                 <Select id="selectFeature" className="coreMargin">
-                    <option >How Should We Contact You?</option>
+                    <option>How Should We Contact You?</option>
                     <option>Text</option>
                     <option>Phone</option>
                     <option>Email</option>

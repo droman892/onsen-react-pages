@@ -8,6 +8,7 @@ class RadioList extends Component {
     render() {
         return (
             <div>
+                <p className="bold">Send me information about:</p>
                 <Radio1/>
                 <Radio2/>
                 <Radio3/>

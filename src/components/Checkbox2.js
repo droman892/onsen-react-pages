@@ -7,7 +7,7 @@ class Checkbox2 extends Component {
     render() {
         return (
             <div id="checkbox2" className="coreMargin">
-                <Checkbox></Checkbox> Investing is my priority
+                <Checkbox></Checkbox> Learn How to Invest
             </div>
         )
     }

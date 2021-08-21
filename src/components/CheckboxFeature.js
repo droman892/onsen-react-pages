@@ -8,6 +8,7 @@ class CheckboxFeature extends Component {
     render() {
         return (
             <div>
+                <p className="bold">I want to:</p>
                 <Checkbox1/>
                 <Checkbox2/>
                 <Checkbox3/>

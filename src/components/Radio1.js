@@ -7,7 +7,7 @@ class Radio1 extends Component {
     render() {
         return (
             <div id="radio1" className="coreMargin">
-                <Radio>Car Loan</Radio>
+                <Radio>Car Loans</Radio>
             </div>
         )
     }
