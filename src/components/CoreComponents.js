@@ -1,22 +1,25 @@
 import React, {Component} from 'react';
-import InputTextFeature from './InputTextFeature';
-import InputDate from './InputDate';
+import InputFeature from './InputFeature';
 import CheckboxFeature from './CheckboxFeature';
 import RadioList from './RadioList';
 import SelectFeature from './SelectFeature';
-import ButtonReview from './ButtonReview';
+import {Button} from 'react-onsenui';
+import {Link} from 'react-router-dom';
 
 class CoreComponents extends Component {
 
     render() {
         return (
             <div id="allComponents" className="center-components">
-                <InputTextFeature/>
-                <InputDate/>
+                <InputFeature/>
                 <CheckboxFeature/>
                 <RadioList/>
                 <SelectFeature/>
-                <ButtonReview/>
+                <div id="buttonReview">
+                    <Button>
+                        <Link to="/page2">Review</Link>
+                    </Button>
+                </div>
             </div>
         )
     }

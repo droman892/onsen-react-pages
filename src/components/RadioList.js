@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import Radio1 from './Radio1';
-import Radio2 from './Radio2';
-import Radio3 from './Radio3';
+import {Radio} from 'react-onsenui';
 
 class RadioList extends Component {
 
@@ -9,9 +7,15 @@ class RadioList extends Component {
         return (
             <div>
                 <p className="bold">Send me information about:</p>
-                <Radio1/>
-                <Radio2/>
-                <Radio3/>
+                <div id="radio1" className="coreMargin">
+                <Radio>Car Loans</Radio>
+                </div>
+                <div id="radio2" className="coreMargin">
+                <Radio>Retirement Planning</Radio>
+                </div>
+                <div id="radio3" className="coreMargin">
+                <Radio>Mortgages</Radio>
+            </div>
             </div>
         )
     }

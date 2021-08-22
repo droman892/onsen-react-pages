@@ -5,6 +5,10 @@ import ToolbarBottom from './ToolbarBottom';
 
 class Page1 extends Component {
 
+    sendData = () => {
+        this.props.parentCallBack("Woah it worked!");
+    }
+
     render() {
         return (
             <div id="page1">

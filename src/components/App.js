@@ -8,11 +8,23 @@ import {
 
 class App extends Component {
 
+    state = {
+        firstName: ""
+    }
+
+    callbackFunction = (inputFirstName) => {
+        this.setState({
+            firstName: inputFirstName
+        })
+    }
+
+
+
     render() {
         return (
             <BrowserRouter>
                 <div id="appComponent" className="page-layout">
-                    <Route exact path="/" render={() => <Page1 title={"Hashtag"} age={27}/> }/>
+                    <Route exact path="/" render={() => <Page1 parentCallBack = {this.callbackFunction}/> }/>
                     <Route path="/page2" render={() => <Page2/> }/>
                 </div>
             </BrowserRouter>

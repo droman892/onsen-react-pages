@@ -10,7 +10,6 @@ class Page2 extends Component {
             <div id="page2">
                 <ToolbarTop/>
                 <Page2List/>
-                
                 <ToolbarBottom/>
             </div>
         )

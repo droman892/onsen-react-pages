@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {List, ListItem} from 'react-onsenui';
-import ButtonBack from './ButtonBack';
-import ButtonSubmit from './ButtonSubmit';
+import {Button} from 'react-onsenui';
+import {Link} from 'react-router-dom';
 
 
 class Page2List extends Component {
@@ -27,8 +27,16 @@ class Page2List extends Component {
                 <ListItem>
                     Mode of Contact:
                 </ListItem>
-                <ButtonBack/>
-                <ButtonSubmit/>
+                <div id="buttonBack">
+                    <Button>
+                        <Link to="/">Back</Link>
+                    </Button>
+                </div>
+                <div id="buttonSubmit">
+                    <Button>
+                        <Link to="/page2">Submit</Link>
+                    </Button>
+                </div>
             </List>
         )
     }
