@@ -4,7 +4,7 @@ import InputDate from './InputDate';
 import CheckboxFeature from './CheckboxFeature';
 import RadioList from './RadioList';
 import SelectFeature from './SelectFeature';
-import ButtonSubmit from './ButtonSubmit';
+import ButtonReview from './ButtonReview';
 
 class CoreComponents extends Component {
 
@@ -16,7 +16,7 @@ class CoreComponents extends Component {
                 <CheckboxFeature/>
                 <RadioList/>
                 <SelectFeature/>
-                <ButtonSubmit/>
+                <ButtonReview/>
             </div>
         )
     }

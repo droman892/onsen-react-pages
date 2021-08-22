@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Page1 from './Page1';
+import Page2 from './Page2';
 import {
     BrowserRouter,
     Route
@@ -11,7 +12,8 @@ class App extends Component {
         return (
             <BrowserRouter>
                 <div id="appComponent" className="page-layout">
-                    <Route path="/" component={Page1}/>
+                    <Route exact path="/" render={() => <Page1 title={"Hashtag"} age={27}/> }/>
+                    <Route path="/page2" render={() => <Page2/> }/>
                 </div>
             </BrowserRouter>
         )
