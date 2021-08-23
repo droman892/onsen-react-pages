@@ -1,12 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {List, ListItem} from 'react-onsenui';
 import {Button} from 'react-onsenui';
 import {Link} from 'react-router-dom';
 
 
-class Page2List extends Component {
-
-    render() {
+const Page2List = () =>  {
         return (
             <List id="displayComponents" className="center-components">
                 <ListItem>
@@ -39,7 +37,6 @@ class Page2List extends Component {
                 </div>
             </List>
         )
-    }
 }
 
 export default Page2List;

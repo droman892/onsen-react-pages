@@ -1,9 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Toolbar} from 'react-onsenui';
 
-class ToolbarTop extends Component {
-
-    render() {
+const ToolbarTop = () =>  {
         return (
             <Toolbar>
                 <div className="center bold">
@@ -11,7 +9,6 @@ class ToolbarTop extends Component {
                 </div>
             </Toolbar>
         )
-    }
 }
 
 export default ToolbarTop;

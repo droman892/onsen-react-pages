@@ -1,9 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Select} from 'react-onsenui';
 
-class SelectFeature extends Component {
-
-    render() {
+const SelectFeature = () =>  {
         return (
             <div>
                 <Select id="selectFeature" className="coreMargin">
@@ -15,7 +13,6 @@ class SelectFeature extends Component {
 
             </div>
         )
-    }
 }
 
 export default SelectFeature;

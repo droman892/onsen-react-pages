@@ -1,8 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Checkbox} from 'react-onsenui';
-class CheckboxFeature extends Component {
 
-    render() {
+const CheckboxFeature = () =>  {
         return (
             <div>
                 <div>
@@ -19,7 +18,6 @@ class CheckboxFeature extends Component {
                 </div>
             </div>
         )
-    }
 }
 
 export default CheckboxFeature;

@@ -1,11 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 import ToolbarTop from './ToolbarTop';
 import Page2List from './Page2List';
 import ToolbarBottom from './ToolbarBottom';
 
-class Page2 extends Component {
-
-    render() {
+const Page2 = () =>  {
         return (
             <div id="page2">
                 <ToolbarTop/>
@@ -13,7 +11,6 @@ class Page2 extends Component {
                 <ToolbarBottom/>
             </div>
         )
-    }
 }
 
 export default Page2;

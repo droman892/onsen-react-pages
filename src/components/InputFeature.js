@@ -1,13 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Input} from 'react-onsenui';
-import MyContext from './MyContext';
-class InputFeature extends Component {
 
-    render() {
+
+const InputFeature = () =>  {
         return (
             <div id="inputFeature">
                 <div id="inputText1" className="coreMargin">
-                    <Input placeholder={MyContext} modifier="underbar"/>
+                    <Input placeholder="First Name..." modifier="underbar"/>
                 </div>
                 <div id="inputText2" className="coreMargin">
                     <Input placeholder="Last Name..." modifier="underbar"/>
@@ -17,7 +16,6 @@ class InputFeature extends Component {
                 </div>
             </div>
         )
-    }
 }
 
 export default InputFeature;

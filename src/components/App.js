@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Page1 from './Page1';
 import Page2 from './Page2';
 import {
@@ -6,10 +6,9 @@ import {
     Route
 } from 'react-router-dom';
 
+const App = () =>  {
 
-class App extends Component {
-
-    render() {
+        // form data
 
         return (
             <BrowserRouter>
@@ -27,7 +26,6 @@ class App extends Component {
             </BrowserRouter>
 
         )
-    }
 }
 
 export default App;

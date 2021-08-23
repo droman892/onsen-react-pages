@@ -1,24 +1,36 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 import {Radio} from 'react-onsenui';
 
-class RadioList extends Component {
+const RadioList = () =>  {
+        
+        const [checkRadio, setCheckRadio] = useState(false)
 
-    render() {
         return (
             <div>
                 <p className="bold">Send me information about:</p>
                 <div id="radio1" className="coreMargin">
-                <Radio>Car Loans</Radio>
+                    <Radio 
+                        checked={checkRadio} 
+                        onChange={event => { setCheckRadio(true)}}  
+                        modifier='material'
+                    /> Car Loans
                 </div>
                 <div id="radio2" className="coreMargin">
-                <Radio>Retirement Planning</Radio>
+                    <Radio 
+                        checked={checkRadio} 
+                        onChange={event => { setCheckRadio(true)} } 
+                        modifier='material'
+                    /> Retirement Planning
                 </div>
                 <div id="radio3" className="coreMargin">
-                <Radio>Mortgages</Radio>
+                    <Radio 
+                        checked={checkRadio} 
+                        onChange={event => { setCheckRadio(true)}}  
+                        modifier='material'
+                    /> Mortgages
             </div>
             </div>
         )
-    }
 }
 
 export default RadioList;

@@ -1,9 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {BottomToolbar} from 'react-onsenui';
 
-class ToolbarBottom extends Component {
-
-    render() {
+const ToolbarBottom = () =>  {
         return (
             <BottomToolbar>
                 <div className="center">
@@ -11,7 +9,6 @@ class ToolbarBottom extends Component {
                 </div>
             </BottomToolbar>
         )
-    }
 }
 
 export default ToolbarBottom;
