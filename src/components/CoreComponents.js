@@ -11,7 +11,9 @@ class CoreComponents extends Component {
     render() {
         return (
             <div id="allComponents" className="center-components">
-                <InputFeature/>
+                <InputFeature
+                    inputCallBack = {this.manageState}
+                />
                 <CheckboxFeature/>
                 <RadioList/>
                 <SelectFeature/>

@@ -12,19 +12,25 @@ class App extends Component {
         firstName: ""
     }
 
-    callbackFunction = (inputFirstName) => {
+    manageState = (inputFirstName) => {
         this.setState({
             firstName: inputFirstName
         })
     }
 
-
-
     render() {
+
         return (
             <BrowserRouter>
                 <div id="appComponent" className="page-layout">
-                    <Route exact path="/" render={() => <Page1 parentCallBack = {this.callbackFunction}/> }/>
+                    <Route exact path="/" render={() => 
+                        <Page1 
+                            inputCallBack = {this.manageState}
+                            firstNamePlaceholder={'First Name...it worked!'}
+                            lastNamePlaceholder={'Last Name...'}
+                            
+                        /> }
+                    />
                     <Route path="/page2" render={() => <Page2/> }/>
                 </div>
             </BrowserRouter>

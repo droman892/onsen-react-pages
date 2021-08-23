@@ -13,7 +13,9 @@ class Page1 extends Component {
         return (
             <div id="page1">
                 <ToolbarTop/>
-                <CoreComponents/>
+                <CoreComponents
+                    
+                />
                 <ToolbarBottom/>
             </div>
         )
