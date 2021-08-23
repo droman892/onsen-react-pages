@@ -6,17 +6,8 @@ import {
     Route
 } from 'react-router-dom';
 
+
 class App extends Component {
-
-    state = {
-        firstName: ""
-    }
-
-    manageState = (inputFirstName) => {
-        this.setState({
-            firstName: inputFirstName
-        })
-    }
 
     render() {
 
@@ -25,15 +16,16 @@ class App extends Component {
                 <div id="appComponent" className="page-layout">
                     <Route exact path="/" render={() => 
                         <Page1 
-                            inputCallBack = {this.manageState}
-                            firstNamePlaceholder={'First Name...it worked!'}
-                            lastNamePlaceholder={'Last Name...'}
+                            
+                            // firstNamePlaceholder={'First Name...it worked!'}
+                            // lastNamePlaceholder={'Last Name...'}
                             
                         /> }
                     />
                     <Route path="/page2" render={() => <Page2/> }/>
                 </div>
             </BrowserRouter>
+
         )
     }
 }

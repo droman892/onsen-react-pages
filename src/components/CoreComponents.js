@@ -11,14 +11,12 @@ class CoreComponents extends Component {
     render() {
         return (
             <div id="allComponents" className="center-components">
-                <InputFeature
-                    inputCallBack = {this.manageState}
-                />
+                <InputFeature/>
                 <CheckboxFeature/>
                 <RadioList/>
                 <SelectFeature/>
                 <div id="buttonReview">
-                    <Button>
+                    <Button type="submit">
                         <Link to="/page2">Review</Link>
                     </Button>
                 </div>
