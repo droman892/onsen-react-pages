@@ -28,7 +28,7 @@ const RadioList = () =>  {
                         onChange={event => { setCheckRadio(true)}}  
                         modifier='material'
                     /> Mortgages
-            </div>
+                </div>
             </div>
         )
 }

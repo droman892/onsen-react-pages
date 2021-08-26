@@ -4,11 +4,13 @@ import {Select} from 'react-onsenui';
 const SelectFeature = () =>  {
         return (
             <div>
+                <label>
+                    How Should We Contact You?
+                </label><br></br>
                 <Select id="selectFeature" className="coreMargin">
-                    <option>How Should We Contact You?</option>
-                    <option>Text</option>
-                    <option>Phone</option>
-                    <option>Email</option>
+                    <option label="Text"/>
+                    <option label="Phone"/>
+                    <option label="Email"/>
                 </Select>
 
             </div>

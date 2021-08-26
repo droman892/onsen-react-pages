@@ -14,12 +14,8 @@ const App = () =>  {
             <BrowserRouter>
                 <div id="appComponent" className="page-layout">
                     <Route exact path="/" render={() => 
-                        <Page1 
-                            
-                            // firstNamePlaceholder={'First Name...it worked!'}
-                            // lastNamePlaceholder={'Last Name...'}
-                            
-                        /> }
+                        <Page1/> 
+                        }
                     />
                     <Route path="/page2" render={() => <Page2/> }/>
                 </div>
