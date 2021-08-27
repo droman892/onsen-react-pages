@@ -6,7 +6,7 @@ import ToolbarBottom from './ToolbarBottom';
 const Page1 = (props) => {
 
 
-    console.log('inside page 1 ', props.checkbox1)
+    
 
         return (
             <div id="page1">

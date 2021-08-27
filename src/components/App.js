@@ -23,21 +23,33 @@ const App = () =>  {
             e.preventDefault();
             const blog = {
                 firstName, 
-                // lastName, 
-                // date, 
-                // checkboxCircle1, 
-                // checkboxCircle2, 
-                // checkboxCircle3, 
-                // radio1,
-                // radio2,
-                // radio3,
-                // selection
+                lastName, 
+                date, 
+                checkboxCircle1, 
+                checkboxCircle2, 
+                checkboxCircle3, 
+                radio1,
+                radio2,
+                radio3,
+                selection
             };
             console.log(blog);
         }
 
-        console.log('checkbox circle 1 value',checkboxCircle1)
+       
 
+        function getInfoAbout() {
+            if (radio1) {
+                return "NAME HERE";
+            }
+            if (radio2) {
+                return "NIceeeeee";
+            }
+            if (radio3) {
+                return "wowwwww";
+            }
+            return "";
+        }
 
         return (
             <BrowserRouter>
@@ -52,8 +64,6 @@ const App = () =>  {
 
                             dateInput = {date}
                             setDateInput = {setDate}
-
-                            
 
                             checkbox1 = {checkboxCircle1}
                             setCheckbox1 = {setCheckboxCircle1}
@@ -82,7 +92,28 @@ const App = () =>  {
                     />
                     <Route path="/page2" render={() => 
                         <Page2
-                            // PASS DOWN PROPS
+                        firstNameInput = {firstName}
+                            setFirstNameInput = {setFirstName}
+
+                            lastNameInput = {lastName}
+
+                            dateInput = {date}
+
+
+                            checkbox1 = {checkboxCircle1}
+
+
+                            checkbox2 = {checkboxCircle2}
+
+
+                            checkbox3 = {checkboxCircle3}
+
+
+                            infoAbout={getInfoAbout()}
+
+
+                            selectionFeature = {selection}
+  
 
                     /> }/>
                 </div>

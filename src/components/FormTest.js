@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom';
 
 const FormTest = (props) =>  {
 
-    console.log('form info ', props.checkbox1)
+    
 
         return (
             <div id="form" className="center-components">
@@ -77,7 +77,7 @@ const FormTest = (props) =>  {
                             name="group"
                             value="first"
                             checked={props.radio1Feature} 
-                            onChange={(e) => props.setRadio1(e.target.checked)}
+                            onChange={(e) => props.setRadio1Feature(e.target.checked)}
                             required  
                             modifier='material'
                         /> Car Loans
@@ -87,7 +87,7 @@ const FormTest = (props) =>  {
                             name="group"
                             value="second"
                             checked={props.radio2Feature} 
-                            onChange={(e) => props.setRadio2(e.target.checked)}
+                            onChange={(e) => props.setRadio2Feature(e.target.checked)}
                             required 
                             modifier='material'
                         /> Retirement Planning
@@ -97,7 +97,7 @@ const FormTest = (props) =>  {
                             name="group"
                             value="third"
                             checked={props.radio3Feature} 
-                            onChange={(e) => props.setRadio3(e.target.checked)}
+                            onChange={(e) => props.setRadio3Feature(e.target.checked)}
                             required  
                             modifier='material'
                         /> Mortgages
@@ -113,9 +113,9 @@ const FormTest = (props) =>  {
                         onChange={(e) => props.setSelectionFeature(e.target.value)}
                         required
                     >
-                        <option label="Text"/>
-                        <option label="Phone"/>
-                        <option label="Email"/>
+                        <option value="Text" label="Text"/>
+                        <option value="Phone" label="Phone"/>
+                        <option value="Email" label="Email"/>
                     </Select>
                     <br></br>
                     <Button modifier="large--cta" onClick={props.manageSubmit}>
