@@ -36,7 +36,7 @@ const App = () =>  {
             console.log(blog);
         }
 
-
+        console.log('checkbox circle 1 value',checkboxCircle1)
 
 
         return (

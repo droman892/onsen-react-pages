@@ -7,6 +7,8 @@ import {Link} from 'react-router-dom';
 
 const FormTest = (props) =>  {
 
+    console.log('form info ', props.checkbox1)
+
         return (
             <div id="form" className="center-components">
                 <form>  
@@ -49,21 +51,21 @@ const FormTest = (props) =>  {
                     </div>
                     <div id="checkbox1" className="coreMargin">
                         <Checkbox
-                            value={props.checkbox1}
+                            checked={props.checkbox1}
                             onChange={(e) => props.setCheckbox1(e.target.checked)}
                             required
                         /> Create a Budget
                     </div>
                     <div id="checkbox2" className="coreMargin">
                         <Checkbox
-                            value={props.checkbox2}
+                            checked={props.checkbox2}
                             onChange={(e) => props.setCheckbox2(e.target.checked)}
                             required
                         /> Learn How to Invest
                     </div>
                     <div id="checkbox3" className="coreMargin">
                         <Checkbox
-                            value={props.checkbox3}
+                            checked={props.checkbox3}
                             onChange={(e) => props.setCheckbox3(e.target.checked)}
                             required
                         /> Decrease My Debt

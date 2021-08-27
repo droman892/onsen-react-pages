@@ -4,39 +4,44 @@ import FormTest from './FormTest';
 import ToolbarBottom from './ToolbarBottom';
 
 const Page1 = (props) => {
+
+
+    console.log('inside page 1 ', props.checkbox1)
+
         return (
             <div id="page1">
                 <ToolbarTop/>
                 <FormTest
                     firstNameInput = {props.firstNameInput}
-                    setFirstNameInput = {props.setFirstName}
+                    setFirstNameInput = {props.setFirstNameInput}
+
 
                     lastNameInput = {props.lastName}
-                    setLastNameInput = {props.setLastName}
+                    setLastNameInput = {props.setLastNameInput}
 
                     dateInput = {props.date}
-                    setDateInput = {props.setDate}
+                    setDateInput = {props.setDateInput}
 
-                    checkbox1 = {props.checkboxCircle1}
-                    setCheckbox1 = {props.setCheckboxCircle1}
+                    checkbox1 = {props.checkbox1}
+                    setCheckbox1 = {props.setCheckbox1}
 
-                    checkbox2 = {props.checkboxCircle2}
-                    setCheckbox2 = {props.setCheckboxCircle2}
+                    checkbox2 = {props.checkbox2}
+                    setCheckbox2 = {props.setCheckbox2}
 
-                    checkbox3 = {props.checkboxCircle3}
-                    setCheckbox3 = {props.setCheckboxCircle3}
+                    checkbox3 = {props.checkbox3}
+                    setCheckbox3 = {props.setCheckbox3}
 
-                    radio1Feature = {props.radio1}
-                    setRadio1Feature = {props.setRadio1}
+                    radio1Feature = {props.radio1Feature}
+                    setRadio1Feature = {props.setRadio1Feature}
 
-                    radio2Feature = {props.radio2}
-                    setRadio2Feature = {props.setRadio2}
+                    radio2Feature = {props.radio2Feature}
+                    setRadio2Feature = {props.setRadio2Feature}
 
-                    radio3Feature = {props.radio3}
-                    setRadio3Feature = {props.setRadio3}
+                    radio3Feature = {props.radio3Feature}
+                    setRadio3Feature = {props.setRadio3Feature}
 
-                    selectionFeature = {props.selection}
-                    setSelectionFeature = {props.setSelection}
+                    selectionFeature = {props.selectionFeature}
+                    setSelectionFeature = {props.setSelectionFeature}
 
                     submitAction = {props.manageSubmit}
                 />    
