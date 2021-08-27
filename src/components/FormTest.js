@@ -5,35 +5,7 @@ import {Radio} from 'react-onsenui';
 import {Button} from 'react-onsenui';
 import {Link} from 'react-router-dom';
 
-const Form = () =>  {
-
-        const [firstName, setFirstName] = useState('');
-        const [lastName, setLastName] = useState('');
-        const [date, setDate] = useState('');
-        const [selection, setSelection] = useState('');
-        const [checkboxCircle1, setCheckboxCircle1] = useState(false);
-        const [checkboxCircle2, setCheckboxCircle2] = useState(false);
-        const [checkboxCircle3, setCheckboxCircle3] = useState(false);
-        const [radio1, setRadio1] = useState(false);
-        const [radio2, setRadio2] = useState(false);
-        const [radio3, setRadio3] = useState(false);
-
-        const manageSubmit = (e) => {
-            e.preventDefault();
-            const blog = {
-                firstName, 
-                lastName, 
-                date, 
-                checkboxCircle1, 
-                checkboxCircle2, 
-                checkboxCircle3, 
-                radio1,
-                radio2,
-                radio3,
-                selection
-            };
-            console.log(blog);
-        }
+const FormTest = (props) =>  {
 
         return (
             <div id="form" className="center-components">
@@ -44,12 +16,12 @@ const Form = () =>  {
                         className="coreMargin"
                         placeholder="First Name..." 
                         modifier="underbar"
-                        value={firstName}   
-                        onChange={(e) => setFirstName(e.target.value)}
+                        // value={firstName}   
+                        // onChange={(e) => setFirstName(e.target.value)}
                         required
                     />
                     </div> 
-                    <div>
+                    {/* <div>
                     <Input 
                         id="inputText2" 
                         className="coreMargin"
@@ -148,10 +120,10 @@ const Form = () =>  {
                             <Link to="/page2">
                                 Review
                             </Link>
-                    </Button>
+                    </Button> */}
                 </form>
             </div>
         )
 }
 
-export default Form;
+export default FormTest;

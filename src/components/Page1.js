@@ -1,13 +1,13 @@
 import React from 'react';
 import ToolbarTop from './ToolbarTop';
-import Form from './Form';
+import FormTest from './FormTest';
 import ToolbarBottom from './ToolbarBottom';
 
-const Page1 = () => {
+const Page1 = (props) => {
         return (
             <div id="page1">
                 <ToolbarTop/>
-                <Form/>
+                <FormTest/>
                 <ToolbarBottom/>
             </div>
         )
