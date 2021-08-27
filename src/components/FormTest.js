@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Input, Select} from 'react-onsenui';
 import {Checkbox} from 'react-onsenui';
 import {Radio} from 'react-onsenui';
@@ -16,19 +16,19 @@ const FormTest = (props) =>  {
                         className="coreMargin"
                         placeholder="First Name..." 
                         modifier="underbar"
-                        // value={firstName}   
-                        // onChange={(e) => setFirstName(e.target.value)}
+                        value={props.firstNameInput}   
+                        onChange={(e) => props.setFirstNameInput(e.target.value)}
                         required
                     />
                     </div> 
-                    {/* <div>
+                    <div>
                     <Input 
                         id="inputText2" 
                         className="coreMargin"
                         placeholder="Last Name..." 
                         modifier="underbar"
-                        value={lastName}   
-                        onChange={(e) => setLastName(e.target.value)}
+                        value={props.lastNameInput}   
+                        onChange={(e) => props.setLastNameInput(e.target.value)}
                         required
                     />
                     </div>
@@ -38,8 +38,8 @@ const FormTest = (props) =>  {
                         className="coreMargin"
                         placeholder="Today's Date..." 
                         modifier="underbar"
-                        value={date}   
-                        onChange={(e) => setDate(e.target.value)}
+                        value={props.dateInput}   
+                        onChange={(e) => props.setDateInput(e.target.value)}
                         required
                     />
                     </div>
@@ -49,22 +49,22 @@ const FormTest = (props) =>  {
                     </div>
                     <div id="checkbox1" className="coreMargin">
                         <Checkbox
-                            value={checkboxCircle1}
-                            onChange={(e) => setCheckboxCircle1(e.target.checked)}
+                            value={props.checkbox1}
+                            onChange={(e) => props.setCheckbox1(e.target.checked)}
                             required
                         /> Create a Budget
                     </div>
                     <div id="checkbox2" className="coreMargin">
                         <Checkbox
-                            value={checkboxCircle2}
-                            onChange={(e) => setCheckboxCircle2(e.target.checked)}
+                            value={props.checkbox2}
+                            onChange={(e) => props.setCheckbox2(e.target.checked)}
                             required
                         /> Learn How to Invest
                     </div>
                     <div id="checkbox3" className="coreMargin">
                         <Checkbox
-                            value={checkboxCircle3}
-                            onChange={(e) => setCheckboxCircle3(e.target.checked)}
+                            value={props.checkbox3}
+                            onChange={(e) => props.setCheckbox3(e.target.checked)}
                             required
                         /> Decrease My Debt
                     </div>
@@ -74,8 +74,8 @@ const FormTest = (props) =>  {
                         <Radio 
                             name="group"
                             value="first"
-                            checked={radio1} 
-                            onChange={(e) => setRadio1(e.target.checked)}
+                            checked={props.radio1Feature} 
+                            onChange={(e) => props.setRadio1(e.target.checked)}
                             required  
                             modifier='material'
                         /> Car Loans
@@ -84,8 +84,8 @@ const FormTest = (props) =>  {
                         <Radio 
                             name="group"
                             value="second"
-                            checked={radio2} 
-                            onChange={(e) => setRadio2(e.target.checked)}
+                            checked={props.radio2Feature} 
+                            onChange={(e) => props.setRadio2(e.target.checked)}
                             required 
                             modifier='material'
                         /> Retirement Planning
@@ -94,8 +94,8 @@ const FormTest = (props) =>  {
                         <Radio 
                             name="group"
                             value="third"
-                            checked={radio3} 
-                            onChange={(e) => setRadio3(e.target.checked)}
+                            checked={props.radio3Feature} 
+                            onChange={(e) => props.setRadio3(e.target.checked)}
                             required  
                             modifier='material'
                         /> Mortgages
@@ -107,8 +107,8 @@ const FormTest = (props) =>  {
                     <Select 
                         id="selectFeature" 
                         className="coreMargin"
-                        value={selection}
-                        onChange={(e) => setSelection(e.target.value)}
+                        value={props.selectionFeature}
+                        onChange={(e) => props.setSelectionFeature(e.target.value)}
                         required
                     >
                         <option label="Text"/>
@@ -116,11 +116,11 @@ const FormTest = (props) =>  {
                         <option label="Email"/>
                     </Select>
                     <br></br>
-                    <Button modifier="large--cta" onClick={manageSubmit}>
+                    <Button modifier="large--cta" onClick={props.manageSubmit}>
                             <Link to="/page2">
                                 Review
                             </Link>
-                    </Button> */}
+                    </Button>
                 </form>
             </div>
         )

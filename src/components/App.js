@@ -19,16 +19,72 @@ const App = () =>  {
         const [radio2, setRadio2] = useState(false);
         const [radio3, setRadio3] = useState(false);
 
+        const manageSubmit = (e) => {
+            e.preventDefault();
+            const blog = {
+                firstName, 
+                // lastName, 
+                // date, 
+                // checkboxCircle1, 
+                // checkboxCircle2, 
+                // checkboxCircle3, 
+                // radio1,
+                // radio2,
+                // radio3,
+                // selection
+            };
+            console.log(blog);
+        }
+
+
+
+
         return (
             <BrowserRouter>
                 <div id="appComponent" className="page-layout">
                     <Route exact path="/" render={() => 
                         <Page1
-                            firstName = {firstName}
+                            firstNameInput = {firstName}
+                            setFirstNameInput = {setFirstName}
+
+                            lastNameInput = {lastName}
+                            setLastNameInput = {setLastName}
+
+                            dateInput = {date}
+                            setDateInput = {setDate}
+
+                            
+
+                            checkbox1 = {checkboxCircle1}
+                            setCheckbox1 = {setCheckboxCircle1}
+
+                            checkbox2 = {checkboxCircle2}
+                            setCheckbox2 = {setCheckboxCircle2}
+
+                            checkbox3 = {checkboxCircle3}
+                            setCheckbox3 = {setCheckboxCircle3}
+
+                            radio1Feature = {radio1}
+                            setRadio1Feature = {setRadio1}
+
+                            radio2Feature = {radio2}
+                            setRadio2Feature = {setRadio2}
+
+                            radio3Feature = {radio3}
+                            setRadio3Feature = {setRadio3}
+
+                            selectionFeature = {selection}
+                            setSelectionFeature = {setSelection}
+
+                            submitAction = {manageSubmit}
                         /> 
                         }
                     />
-                    <Route path="/page2" render={() => <Page2/> }/>
+                    <Route path="/page2" render={() => 
+                        <Page2
+                            // PASS DOWN PROPS
+
+                    /> }/>
                 </div>
             </BrowserRouter>
 
