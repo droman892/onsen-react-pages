@@ -22,12 +22,15 @@ const Page1 = (props) => {
                     dateInput = {props.date}
                     setDateInput = {props.setDateInput}
 
+                    checkbox1Value={props.checkbox1Value}
                     checkbox1 = {props.checkbox1}
                     setCheckbox1 = {props.setCheckbox1}
 
+                    checkbox2Value={props.checkbox2Value}
                     checkbox2 = {props.checkbox2}
                     setCheckbox2 = {props.setCheckbox2}
 
+                    checkbox3Value={props.checkbox3Value}
                     checkbox3 = {props.checkbox3}
                     setCheckbox3 = {props.setCheckbox3}
 

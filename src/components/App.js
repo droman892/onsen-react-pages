@@ -8,10 +8,10 @@ import {
 
 const App = () =>  {
 
-        const [firstName, setFirstName] = useState('');
-        const [lastName, setLastName] = useState('');
-        const [date, setDate] = useState('');
-        const [selection, setSelection] = useState('');
+        const [firstName, setFirstName] = useState("");
+        const [lastName, setLastName] = useState("");
+        const [date, setDate] = useState("");
+        const [selection, setSelection] = useState("");
         const [checkboxCircle1, setCheckboxCircle1] = useState(false);
         const [checkboxCircle2, setCheckboxCircle2] = useState(false);
         const [checkboxCircle3, setCheckboxCircle3] = useState(false);
@@ -31,23 +31,46 @@ const App = () =>  {
                 radio1,
                 radio2,
                 radio3,
-                selection
+                selection,
+                getCheckbox1,
+                getCheckbox2,
+                getCheckbox3,
+                getRadio
             };
             console.log(blog);
         }
 
-       
+        const getCheckbox1 = () => {
+            if (checkboxCircle1) {
+                return "Create a Budget";
+            } else
+            return "";
+        }
 
-        function getInfoAbout() {
+        const getCheckbox2 = () => {
+            if (checkboxCircle2) {
+                return "Learn How to Invest";
+            } else
+            return "";
+        }
+
+        const getCheckbox3 = () => {
+            if (checkboxCircle3) {
+                return "Decrease My Debt";
+            } else
+            return "";
+        }
+
+        const getRadio = () => {
             if (radio1) {
-                return "NAME HERE";
+                return "Car Loans";
             }
-            if (radio2) {
-                return "NIceeeeee";
+            else if (radio2) {
+                return "Retirement Planning";
             }
-            if (radio3) {
-                return "wowwwww";
-            }
+            else if (radio3) {
+                return "Mortgages";
+            } else
             return "";
         }
 
@@ -65,12 +88,15 @@ const App = () =>  {
                             dateInput = {date}
                             setDateInput = {setDate}
 
+                            checkbox1Value={'Create a Budget'}
                             checkbox1 = {checkboxCircle1}
                             setCheckbox1 = {setCheckboxCircle1}
 
+                            checkbox2Value={'Learn How to Invest'}
                             checkbox2 = {checkboxCircle2}
                             setCheckbox2 = {setCheckboxCircle2}
 
+                            checkbox3Value={'Decrease My Debt'}
                             checkbox3 = {checkboxCircle3}
                             setCheckbox3 = {setCheckboxCircle3}
 
@@ -99,18 +125,20 @@ const App = () =>  {
 
                             dateInput = {date}
 
-
+                            checkbox1Value={'Create a Budget'}
                             checkbox1 = {checkboxCircle1}
 
-
+                            checkbox2Value={'Learn How to Invest'}
                             checkbox2 = {checkboxCircle2}
 
-
+                            checkbox3Value={'Decrease My Debt'}
                             checkbox3 = {checkboxCircle3}
 
+                            getTheCheckbox1={getCheckbox1()}
+                            getTheCheckbox2={getCheckbox2()}
+                            getTheCheckbox3={getCheckbox3()}
 
-                            infoAbout={getInfoAbout()}
-
+                            getTheRadio={getRadio()}
 
                             selectionFeature = {selection}
   

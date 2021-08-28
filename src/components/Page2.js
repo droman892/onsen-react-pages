@@ -23,14 +23,14 @@ const Page2 = (props) =>  {
                         Date: {props.dateInput}
                     </ListItem>
                     <ListItem>
-                        You Want to: 
-                        {props.checkbox1}
-                        {props.checkbox2}
-                        {props.checkbox3}
+                        You Want to: <br></br>
+                        {props.getTheCheckbox1}
+                        {props.getTheCheckbox2}
+                        {props.getTheCheckbox3}
                     </ListItem>
                     <ListItem>
-                    Send You Information About: 
-                        {props.infoAbout}
+                    Send You Information About: <br></br>
+                        {props.getTheRadio}
                     </ListItem>
                     <ListItem>
                         Mode of Contact: {props.selectionFeature}

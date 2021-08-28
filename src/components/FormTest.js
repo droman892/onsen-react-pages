@@ -54,21 +54,21 @@ const FormTest = (props) =>  {
                             checked={props.checkbox1}
                             onChange={(e) => props.setCheckbox1(e.target.checked)}
                             required
-                        /> Create a Budget
+                        /> {props.checkbox1Value}
                     </div>
                     <div id="checkbox2" className="coreMargin">
                         <Checkbox
                             checked={props.checkbox2}
                             onChange={(e) => props.setCheckbox2(e.target.checked)}
                             required
-                        /> Learn How to Invest
+                        /> {props.checkbox2Value}
                     </div>
                     <div id="checkbox3" className="coreMargin">
                         <Checkbox
                             checked={props.checkbox3}
                             onChange={(e) => props.setCheckbox3(e.target.checked)}
                             required
-                        /> Decrease My Debt
+                        /> {props.checkbox3Value}
                     </div>
 
                     <p className="bold">Send me information about:</p>
