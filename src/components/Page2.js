@@ -1,6 +1,5 @@
 import React from 'react';
 import ToolbarTop from './ToolbarTop';
-import {List, ListItem} from 'react-onsenui';
 import {Button} from 'react-onsenui';
 import {Link} from 'react-router-dom';
 import ToolbarBottom from './ToolbarBottom';
@@ -12,40 +11,46 @@ const Page2 = (props) =>  {
         return (
             <div id="page2">
                 <ToolbarTop/>
-                <List id="displayComponents" className="center-components">
-                    <ListItem>
-                        First Name: {props.firstNameInput}
-                    </ListItem>
-                    <ListItem>
-                        Last Name: {props.lastNameInput}
-                    </ListItem>
-                    <ListItem>
-                        Date: {props.dateInput}
-                    </ListItem>
-                    <ListItem>
-                        You Want to: <br></br>
-                        {props.getTheCheckbox1}
-                        {props.getTheCheckbox2}
-                        {props.getTheCheckbox3}
-                    </ListItem>
-                    <ListItem>
-                    Send You Information About: <br></br>
+                <div id="displayComponents" className="center-components">
+                    <div>
+                    <p className="bold">First Name:</p> {props.firstNameInput}
+                    </div>
+                    <div>
+                    <p className="bold">Last Name:</p> {props.lastNameInput}
+                    </div>
+                    <div>
+                    <p className="bold">Date:</p> {props.dateInput}
+                    </div>
+                    <div>
+                        <div>
+                            <p className="bold">I want to:</p>
+                        </div>
+                        <div>{props.getTheCheckbox1}</div>
+                        <div>{props.getTheCheckbox2}</div>
+                        <div>{props.getTheCheckbox3}</div>
+                    </div>
+                    <div>
+                    <div>
+                        <p className="bold">Send You Information About:</p>
+                    </div> 
                         {props.getTheRadio}
-                    </ListItem>
-                    <ListItem>
-                        Mode of Contact: {props.selectionFeature}
-                    </ListItem>
+                    </div>
+                    <div>
+                    <p className="bold">Mode of Contact: </p>
+                        {props.selectionFeature}
+                    </div>
+                    <br></br>
                     <div id="buttonBack">
-                        <Button>
-                            <Link to="/">Back</Link>
+                        <Button modifier="large--cta">
+                            <Link to="/" className="button-mod">Back</Link>
                         </Button>
                     </div>
                     <div id="buttonSubmit">
-                        <Button>
-                        <Link to="/page2">Submit</Link>
+                        <Button modifier="large--cta">
+                        <Link to="/page2" className="button-mod">Submit</Link>
                         </Button>
                     </div>
-                </List>
+                </div>
                 <ToolbarBottom/>
             </div>
         )

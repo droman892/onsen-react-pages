@@ -1,6 +1,6 @@
 import React from 'react';
 import ToolbarTop from './ToolbarTop';
-import FormTest from './FormTest';
+import Form from './Form';
 import ToolbarBottom from './ToolbarBottom';
 
 const Page1 = (props) => {
@@ -11,7 +11,7 @@ const Page1 = (props) => {
         return (
             <div id="page1">
                 <ToolbarTop/>
-                <FormTest
+                <Form
                     firstNameInput = {props.firstNameInput}
                     setFirstNameInput = {props.setFirstNameInput}
 

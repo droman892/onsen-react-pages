@@ -6,6 +6,13 @@ body {
   font-weight: 500;
 }
 
+.button-mod {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+
 .center-components {
   width: 80vw;
   margin: 0;
@@ -18,3 +25,4 @@ body {
 .coreMargin {
   margin-bottom: 5%;
 }
+
