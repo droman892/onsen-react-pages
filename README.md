@@ -1,6 +1,6 @@
 ![Onsen React Pages](https://user-images.githubusercontent.com/25372739/131240628-0a8c0378-5876-4c22-b2ff-4c42741b08df.JPG)
 
-<p align="center"> This is a form application [primarily] for mobile applications, using the </p> [Onsen UI API](https://onsen.io/).
+This is a form application [primarily] for mobile applications, using the [Onsen UI API](https://onsen.io/).
 
 <p align="center"> :older_woman: :iphone: :dollar: :memo: :house_with_garden: :car: :older_man: </p>
 
@@ -8,13 +8,13 @@
 
 <p align="center"> This React form application was built mobile-first with the Onsen UI API for smooth compatibility across both Android and iOS devices. </p>
 
-<p align="center"> Users are able to interact with the controlled form features (i.e., input, checkbox, radio, select-dropdown, and button) on `Page1.js` with solely function components.  The bulk of state is managed in `App.js` with useState() hooks.  When the user clicks the "Review" link describing the button, React Router navigates the view to `Page2.js`, where the changed state of the form components is displayed. Changes to the state of the form are outputted on the console upon entering the display page.</p>
+<p align="center"> Users are able to interact with the controlled form features (i.e., input, checkbox, radio, select-dropdown, and button) on Page1.js with solely function components.  The bulk of state is managed in App.js with useState() hooks.  When the user clicks the "Review" link describing the button, React Router navigates the view to Page2.js, where the changed state of the form is displayed. Changes to the state of the form are outputted on the console upon entering the display page.</p>
 
-<p align="center"> Regarding UX, users enjoy specially selected fonts (i.e, Montserrat, Roboto Slab, Roboto) through the Google Fonts API.  The colors were curated to give users the feeling of trust and security when submitting their information.  To complete the form submission process, upon clicking the "Submit" button, a toast feature appears, showing, "Thanks for your submission!"</p>
+<p align="center"> Regarding UX, users enjoy specially selected fonts (i.e, Montserrat, Roboto Slab, Roboto) through the Google Fonts API.  Additionally, the colors #5CDBD7 and #292829 were curated to give users the feeling of trust and security when submitting their information.  To complete the form submission process, upon clicking the "Submit" button, a toast feature appears, showing, "Thanks for your submission!"</p>
 
 ## Preview
 
-![Onsen React Pages - GIF](https://user-images.githubusercontent.com/25372739/131240819-d092847f-d7d8-40a4-a488-198906c5eb78.gif)
+![Onsen React Pages - GIF](https://user-images.githubusercontent.com/25372739/131264289-89dd88e8-b6df-4c76-b638-5e4a495eb738.gif)
 
 [Live Preview](http://david-roman.tech/onsen-react-pages/)
 
@@ -39,7 +39,7 @@ After the project files are downloaded, in the terminal, run `npm install` to in
 
 ## Roadmap
 
-This React scoreboard application is an on-going project, open to contributions and critique.  Functionality that could improve the UX may include the following:
+This React form application is an on-going project, open to contributions and critique.  Functionality that would appropriately flesh out the application include the following:
 1) connect the form data in a database
 2) optimize the radio feature
 3) include media queries for added responsiveness
