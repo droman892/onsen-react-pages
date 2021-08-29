@@ -3,10 +3,8 @@ import ToolbarTop from './ToolbarTop';
 import Form from './Form';
 import ToolbarBottom from './ToolbarBottom';
 
+
 const Page1 = (props) => {
-
-
-    
 
         return (
             <div id="page1">

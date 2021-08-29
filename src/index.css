@@ -52,6 +52,11 @@ body {
   color: white;
 }
 
+.max-size {
+  max-width: 800px;
+  max-height: 900px;
+}
+
 .select-feature {
   width: 100%;
 }
@@ -81,8 +86,4 @@ body {
 .white-text {
   color: #fff;
   font-weight: 600;
-}
-
-Button:hover {
-  opacity: 90%;
 }

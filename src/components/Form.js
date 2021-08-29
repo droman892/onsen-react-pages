@@ -10,7 +10,7 @@ const Form = (props) =>  {
     
 
         return (
-            <div id="form" className="center-components">
+            <div id="form" className="center-components max-size">
                 <form>  
                     <div> 
                     <Input 
