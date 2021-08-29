@@ -81,7 +81,7 @@ const App = () =>  {
         }
 
         return (
-            <BrowserRouter>
+            <BrowserRouter basename="/onsen-react-pages">
                 <div id="appComponent" className="page-layout">
                     <Route exact path="/" render={() => 
                         <Page1

@@ -1,16 +1,16 @@
 ![Onsen React Pages](https://user-images.githubusercontent.com/25372739/131240628-0a8c0378-5876-4c22-b2ff-4c42741b08df.JPG)
 
-<p align="center"> This is a form application [primarily] for mobile applications, using the [Onsen UI API](https://onsen.io/).</p>
+<p align="center"> This is a form application [primarily] for mobile applications, using the </p> [Onsen UI API](https://onsen.io/).
 
 <p align="center"> :older_woman: :iphone: :dollar: :memo: :house_with_garden: :car: :older_man: </p>
 
 ## Description
 
-<p align="center"> This React form application was built  </p>
+<p align="center"> This React form application was built mobile-first with the Onsen UI API for smooth compatibility across both Android and iOS devices. </p>
 
-<p align="center"> Users are able to interact with the controlled form features (i.e., input, checkbox, radio, select-dropdown, and button) on `Page1.js` with solely function components.  State is managed entirely in `App.js` with useState() hooks.  .  When the user clicks the "Review" link describing the button, React Router navigates the view to `Page2.js`, where the changed state of the form components is displayed    </p>
+<p align="center"> Users are able to interact with the controlled form features (i.e., input, checkbox, radio, select-dropdown, and button) on `Page1.js` with solely function components.  The bulk of state is managed in `App.js` with useState() hooks.  When the user clicks the "Review" link describing the button, React Router navigates the view to `Page2.js`, where the changed state of the form components is displayed. Changes to the state of the form are outputted on the console upon entering the display page.</p>
 
-<p align="center"> Regarding UX, users enjoy...</p>
+<p align="center"> Regarding UX, users enjoy specially selected fonts (i.e, Montserrat, Roboto Slab, Roboto) through the Google Fonts API.  The colors were curated to give users the feeling of trust and security when submitting their information.  To complete the form submission process, upon clicking the "Submit" button, a toast feature appears, showing, "Thanks for your submission!"</p>
 
 ## Preview
 
@@ -20,7 +20,7 @@
 
 ## Business Use Case
 
-- Individual needs...
+- Individual/Business needs the front end experience for a mobile form application
 
 ## Status
 
@@ -40,9 +40,9 @@ After the project files are downloaded, in the terminal, run `npm install` to in
 ## Roadmap
 
 This React scoreboard application is an on-going project, open to contributions and critique.  Functionality that could improve the UX may include the following:
-1) 
-2) 
-3) 
+1) connect the form data in a database
+2) optimize the radio feature
+3) include media queries for added responsiveness
 
 ## Bugs and Issues
 
@@ -55,7 +55,7 @@ Please make sure to update tests as appropriate.
 
 ## About
 
-This React scoreboard application is maintained by [David Roman](https://www.linkedin.com/in/david-roman-front-end-engineer/).
+This React form application is maintained by [David Roman](https://www.linkedin.com/in/david-roman-front-end-engineer/).
 
 ## License
 
