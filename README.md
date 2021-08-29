@@ -43,6 +43,8 @@ This React form application is an on-going project, open to contributions and cr
 1) connect the form data in a database
 2) optimize the radio feature
 3) include media queries for added responsiveness
+4) incorporate form validation
+5) use the React context API instead of prop-drilling
 
 ## Bugs and Issues
 
