@@ -1,8 +1,7 @@
-import React from 'react';
-import ToolbarTop from './ToolbarTop';
-import Form from './Form';
-import ToolbarBottom from './ToolbarBottom';
-
+import React from "react";
+import ToolbarTop from "./ToolbarTop";
+import Form from "./Form";
+import ToolbarBottom from "./ToolbarBottom";
 
 const Page1 = (props) => {
 
@@ -12,7 +11,6 @@ const Page1 = (props) => {
                 <Form
                     firstNameInput = {props.firstNameInput}
                     setFirstNameInput = {props.setFirstNameInput}
-
 
                     lastNameInput = {props.lastName}
                     setLastNameInput = {props.setLastNameInput}

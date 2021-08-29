@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
-import Page1 from './Page1';
-import Page2 from './Page2';
+import React, {useState} from "react";
+import Page1 from "./Page1";
+import Page2 from "./Page2";
 import {
     BrowserRouter,
     Route
-} from 'react-router-dom';
+} from "react-router-dom";
 
 const App = () =>  {
 
@@ -21,6 +21,8 @@ const App = () =>  {
 
         const manageSubmit = (e) => {
             e.preventDefault();
+
+            // This blog object is for future functionality to store form data in a database
             const blog = {
                 firstName, 
                 lastName, 
@@ -62,16 +64,20 @@ const App = () =>  {
         }
 
         const getRadio = () => {
-            if (radio1) {
-                return "Car Loans";
-            }
-            else if (radio2) {
-                return "Retirement Planning";
-            }
-            else if (radio3) {
-                return "Mortgages";
-            } else
-            return "";
+            for (let i=1; i<4; i++) {
+                if (radio1 ===true) {
+                    return "Car Loans"; 
+                }
+                else if (radio2 ===true) {
+                    return "Retirement Planning";
+                }
+                else if (radio3 ===true) {
+                    return "Mortgages";
+                } else
+                    return "";
+                }
+            
+            
         }
 
         return (
@@ -88,15 +94,15 @@ const App = () =>  {
                             dateInput = {date}
                             setDateInput = {setDate}
 
-                            checkbox1Value={'Create a Budget'}
+                            checkbox1Value={"Create a Budget"}
                             checkbox1 = {checkboxCircle1}
                             setCheckbox1 = {setCheckboxCircle1}
 
-                            checkbox2Value={'Learn How to Invest'}
+                            checkbox2Value={"Learn How to Invest"}
                             checkbox2 = {checkboxCircle2}
                             setCheckbox2 = {setCheckboxCircle2}
 
-                            checkbox3Value={'Decrease My Debt'}
+                            checkbox3Value={"Decrease My Debt"}
                             checkbox3 = {checkboxCircle3}
                             setCheckbox3 = {setCheckboxCircle3}
 
@@ -125,13 +131,13 @@ const App = () =>  {
 
                             dateInput = {date}
 
-                            checkbox1Value={'Create a Budget'}
+                            checkbox1Value={"Create a Budget"}
                             checkbox1 = {checkboxCircle1}
 
-                            checkbox2Value={'Learn How to Invest'}
+                            checkbox2Value={"Learn How to Invest"}
                             checkbox2 = {checkboxCircle2}
 
-                            checkbox3Value={'Decrease My Debt'}
+                            checkbox3Value={"Decrease My Debt"}
                             checkbox3 = {checkboxCircle3}
 
                             getTheCheckbox1={getCheckbox1()}
@@ -141,8 +147,6 @@ const App = () =>  {
                             getTheRadio={getRadio()}
 
                             selectionFeature = {selection}
-  
-
                     /> }/>
                 </div>
             </BrowserRouter>

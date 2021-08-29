@@ -1,14 +1,14 @@
 ![Onsen React Pages](https://user-images.githubusercontent.com/25372739/131240628-0a8c0378-5876-4c22-b2ff-4c42741b08df.JPG)
 
-<p align="center"> This is a...</p>
+<p align="center"> This is a form application [primarily] for mobile applications, using the [Onsen UI API](https://onsen.io/).</p>
 
-<p align="center"> :one: :two: :three: :four: :five: :six: :seven: :eight: :nine: :keycap_ten: </p>
+<p align="center"> :older_woman: :iphone: :dollar: :memo: :house_with_garden: :car: :older_man: </p>
 
 ## Description
 
-<p align="center"> This React form application was built... </p>
+<p align="center"> This React form application was built  </p>
 
-<p align="center"> Users are...</p>
+<p align="center"> Users are able to interact with the controlled form features (i.e., input, checkbox, radio, select-dropdown, and button) on `Page1.js` with solely function components.  State is managed entirely in `App.js` with useState() hooks.  .  When the user clicks the "Review" link describing the button, React Router navigates the view to `Page2.js`, where the changed state of the form components is displayed    </p>
 
 <p align="center"> Regarding UX, users enjoy...</p>
 

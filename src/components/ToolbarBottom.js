@@ -1,5 +1,5 @@
-import React from 'react';
-import {BottomToolbar} from 'react-onsenui';
+import React from "react";
+import {BottomToolbar} from "react-onsenui";
 
 const ToolbarBottom = () =>  {
         return (

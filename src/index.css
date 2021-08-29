@@ -68,6 +68,11 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.toasty {
+  font-size: 22px;
+  text-align: center;
+}
+
 .top-text-center {
   font-weight: 900;
   font-size: 20px;
