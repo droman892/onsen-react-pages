@@ -4,8 +4,10 @@ import {Toolbar} from 'react-onsenui';
 const ToolbarTop = () =>  {
         return (
             <Toolbar>
-                <div className="center bold">
-                    Intake Form
+                <div className="top-toolbar-custom-background">
+                    <div className="top-text-center">
+                        Financial Intake Form
+                    </div>
                 </div>
             </Toolbar>
         )

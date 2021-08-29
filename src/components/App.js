@@ -11,7 +11,7 @@ const App = () =>  {
         const [firstName, setFirstName] = useState("");
         const [lastName, setLastName] = useState("");
         const [date, setDate] = useState("");
-        const [selection, setSelection] = useState("");
+        const [selection, setSelection] = useState("Select a Value");
         const [checkboxCircle1, setCheckboxCircle1] = useState(false);
         const [checkboxCircle2, setCheckboxCircle2] = useState(false);
         const [checkboxCircle3, setCheckboxCircle3] = useState(false);

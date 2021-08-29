@@ -17,7 +17,7 @@ const Form = (props) =>  {
                         id="inputText1" 
                         className="coreMargin"
                         placeholder="First Name..." 
-                        modifier="underbar"
+                        modifier="material"
                         value={props.firstNameInput}   
                         onChange={(e) => props.setFirstNameInput(e.target.value)}
                         required
@@ -28,7 +28,7 @@ const Form = (props) =>  {
                         id="inputText2" 
                         className="coreMargin"
                         placeholder="Last Name..." 
-                        modifier="underbar"
+                        modifier="material"
                         value={props.lastNameInput}   
                         onChange={(e) => props.setLastNameInput(e.target.value)}
                         required
@@ -39,7 +39,7 @@ const Form = (props) =>  {
                         id="inputDate" 
                         className="coreMargin"
                         placeholder="Today's Date..." 
-                        modifier="underbar"
+                        modifier="material"
                         value={props.dateInput}   
                         onChange={(e) => props.setDateInput(e.target.value)}
                         required
@@ -51,6 +51,7 @@ const Form = (props) =>  {
                     </div>
                     <div id="checkbox1" className="coreMargin">
                         <Checkbox
+                            modifier="material"
                             checked={props.checkbox1}
                             onChange={(e) => props.setCheckbox1(e.target.checked)}
                             required
@@ -58,6 +59,7 @@ const Form = (props) =>  {
                     </div>
                     <div id="checkbox2" className="coreMargin">
                         <Checkbox
+                            modifier="material"
                             checked={props.checkbox2}
                             onChange={(e) => props.setCheckbox2(e.target.checked)}
                             required
@@ -65,6 +67,7 @@ const Form = (props) =>  {
                     </div>
                     <div id="checkbox3" className="coreMargin">
                         <Checkbox
+                            modifier="material"
                             checked={props.checkbox3}
                             onChange={(e) => props.setCheckbox3(e.target.checked)}
                             required
@@ -79,7 +82,7 @@ const Form = (props) =>  {
                             checked={props.radio1Feature} 
                             onChange={(e) => props.setRadio1Feature(e.target.checked)}
                             required  
-                            modifier='material'
+                            modifier="material"
                         /> Car Loans
                     </div>
                     <div id="radio2" className="coreMargin">
@@ -89,7 +92,7 @@ const Form = (props) =>  {
                             checked={props.radio2Feature} 
                             onChange={(e) => props.setRadio2Feature(e.target.checked)}
                             required 
-                            modifier='material'
+                            modifier="material"
                         /> Retirement Planning
                     </div>
                     <div id="radio3" className="coreMargin">
@@ -99,7 +102,7 @@ const Form = (props) =>  {
                             checked={props.radio3Feature} 
                             onChange={(e) => props.setRadio3Feature(e.target.checked)}
                             required  
-                            modifier='material'
+                            modifier="material"
                         /> Mortgages
                     </div>
 
@@ -108,18 +111,23 @@ const Form = (props) =>  {
                     </label><br></br>
                     <Select 
                         id="selectFeature" 
-                        className="coreMargin"
+                        modifier="material"
+                        className="coreMargin select-feature"
                         value={props.selectionFeature}
                         onChange={(e) => props.setSelectionFeature(e.target.value)}
                         required
                     >
-                        <option value="Text" label="Text"/>
+                        <option value="Text" label="Text" className="center-select"/>
                         <option value="Phone" label="Phone"/>
                         <option value="Email" label="Email"/>
                     </Select>
                     <br></br>
-                    <Button modifier="large--cta" onClick={props.manageSubmit}>
-                            <Link to="/page2" className="button-mod">
+                    <Button 
+                        ripple 
+                        modifier="large--cta material" 
+                        className="button-mod" 
+                        onClick={props.manageSubmit}>
+                            <Link to="/page2" className="link-mod">
                                 Review
                             </Link>
                     </Button>

@@ -1,17 +1,37 @@
 body {
-  font-family: BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen';
+  font-family: Montserrat, "Roboto Slab", Roboto, "Times New Roman";
 }
 
 .bold {
-  font-weight: 500;
-}
-
-.button-mod {
-  text-decoration: none;
   font-weight: bold;
-  color: white;
 }
 
+.bottom-toolbar-custom-background {
+  background-color: #292829;
+  height: 50px;
+  width: 90000%;
+}
+
+.br {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.button-margin {
+  margin: 10px;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-select {
+  padding-left: 50px;
+}
 
 .center-components {
   width: 80vw;
@@ -26,3 +46,43 @@ body {
   margin-bottom: 5%;
 }
 
+.link-mod {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.select-feature {
+  width: 100%;
+}
+
+.text-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top-text-center {
+  font-weight: 900;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.top-toolbar-custom-background {
+  background-color: #5CDBD7;
+  height: 50px;
+  width: 90000%;
+}
+
+.white-text {
+  color: #fff;
+  font-weight: 600;
+}
+
+Button:hover {
+  opacity: 90%;
+}

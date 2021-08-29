@@ -40,14 +40,15 @@ const Page2 = (props) =>  {
                         {props.selectionFeature}
                     </div>
                     <br></br>
-                    <div id="buttonBack">
-                        <Button modifier="large--cta">
-                            <Link to="/" className="button-mod">Back</Link>
-                        </Button>
-                    </div>
                     <div id="buttonSubmit">
-                        <Button modifier="large--cta">
-                        <Link to="/page2" className="button-mod">Submit</Link>
+                        <Button ripple modifier="large--cta material" className="button-mod button-margin">
+                            <Link to="/page2" className="link-mod">Submit</Link>
+                        </Button>
+                    </div> 
+                    <span className="br"></span>
+                    <div id="buttonBack">
+                        <Button ripple modifier="large--cta material" className="button-mod">
+                            <Link to="/" className="link-mod">Back</Link>
                         </Button>
                     </div>
                 </div>
