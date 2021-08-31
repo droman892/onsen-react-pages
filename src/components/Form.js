@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {Input, Select} from "react-onsenui";
 import {Checkbox} from "react-onsenui";
 import {Radio} from "react-onsenui";
@@ -6,8 +6,6 @@ import {Button} from "react-onsenui";
 import {Link} from "react-router-dom";
 
 const Form = (props) =>  {
-
-    
 
         return (
             <div id="form" className="center-components max-size">
@@ -74,7 +72,12 @@ const Form = (props) =>  {
                             name="group"
                             value="first"
                             checked={props.radio1Feature} 
-                            onChange={(e) => props.setRadio1Feature(e.target.checked)} 
+                            onChange={(e) => {
+                            if (e.target.checked === true) {
+                                console.log("Radio is Checked:", e.target.checked);
+                                props.setRadio1Feature();
+                                }
+                            }} 
                             modifier="material"
                         /> Car Loans
                     </div>
@@ -83,7 +86,12 @@ const Form = (props) =>  {
                             name="group"
                             value="second"
                             checked={props.radio2Feature} 
-                            onChange={(e) => props.setRadio2Feature(e.target.checked)}
+                            onChange={(e) => {
+                            if (e.target.checked === true) {
+                                console.log("Radio is Checked:", e.target.checked);
+                                props.setRadio2Feature();
+                                }
+                            }}
                             modifier="material"
                         /> Retirement Planning
                     </div>
@@ -92,7 +100,12 @@ const Form = (props) =>  {
                             name="group"
                             value="third"
                             checked={props.radio3Feature} 
-                            onChange={(e) => props.setRadio3Feature(e.target.checked)} 
+                            onChange={(e) => {
+                            if (e.target.checked === true) {
+                                console.log("Radio is Checked:", e.target.checked);
+                                props.setRadio3Feature();
+                                }
+                            }} 
                             modifier="material"
                         /> Mortgages
                     </div>

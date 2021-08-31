@@ -15,70 +15,62 @@ const App = () =>  {
         const [checkboxCircle1, setCheckboxCircle1] = useState(false);
         const [checkboxCircle2, setCheckboxCircle2] = useState(false);
         const [checkboxCircle3, setCheckboxCircle3] = useState(false);
-        const [radio1, setRadio1] = useState(false);
-        const [radio2, setRadio2] = useState(false);
-        const [radio3, setRadio3] = useState(false);
-
+        const [radio, setRadio] = useState(0);
+        console.log(radio);
         const manageSubmit = (e) => {
             e.preventDefault();
 
             // This blog object is for future functionality to store form data in a database
-            const blog = {
+            const formData = {
                 firstName, 
                 lastName, 
                 date, 
                 checkboxCircle1, 
                 checkboxCircle2, 
                 checkboxCircle3, 
-                radio1,
-                radio2,
-                radio3,
+                radio,
                 selection,
                 getCheckbox1,
                 getCheckbox2,
                 getCheckbox3,
                 getRadio
             };
-            console.log(blog);
+            console.log(formData);
         }
 
         const getCheckbox1 = () => {
             if (checkboxCircle1) {
                 return "Create a Budget";
-            } else
+            } 
             return "";
         }
 
         const getCheckbox2 = () => {
             if (checkboxCircle2) {
                 return "Learn How to Invest";
-            } else
+            } 
             return "";
         }
 
         const getCheckbox3 = () => {
             if (checkboxCircle3) {
                 return "Decrease My Debt";
-            } else
+            } 
             return "";
         }
 
         const getRadio = () => {
-            for (let i=1; i<4; i++) {
-                if (radio1 ===true) {
-                    return "Car Loans"; 
-                }
-                else if (radio2 ===true) {
-                    return "Retirement Planning";
-                }
-                else if (radio3 ===true) {
-                    return "Mortgages";
-                } else
-                    return "";
-                }
-            
-            
-        }
+            if (radio === 1) {
+                return "Car Loans"; 
+            }
+            if (radio === 2) {
+                return "Retirement Planning";
+            }
+            if (radio === 3) {
+                return "Mortgages";
+            } 
+            return "";
+        } 
 
         return (
             <BrowserRouter basename="/onsen-react-pages">
@@ -106,14 +98,14 @@ const App = () =>  {
                             checkbox3 = {checkboxCircle3}
                             setCheckbox3 = {setCheckboxCircle3}
 
-                            radio1Feature = {radio1}
-                            setRadio1Feature = {setRadio1}
+                            radio1Feature = {radio === 1}
+                            setRadio1Feature = {() => setRadio(1)}
 
-                            radio2Feature = {radio2}
-                            setRadio2Feature = {setRadio2}
+                            radio2Feature = {radio === 2}
+                            setRadio2Feature = {() => setRadio(2)}
 
-                            radio3Feature = {radio3}
-                            setRadio3Feature = {setRadio3}
+                            radio3Feature = {radio === 3}
+                            setRadio3Feature = {() => setRadio(3)}
 
                             selectionFeature = {selection}
                             setSelectionFeature = {setSelection}
