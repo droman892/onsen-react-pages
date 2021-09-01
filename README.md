@@ -41,10 +41,9 @@ After the project files are downloaded, in the terminal, run `npm install` to in
 
 This React form application is an on-going project, open to contributions and critique.  Functionality that would appropriately flesh out the application include the following:
 1) connect the form data in a database
-2) optimize the radio feature
-3) include media queries for added responsiveness
-4) incorporate form validation
-5) use the React context API instead of prop-drilling
+2) include media queries for added responsiveness
+3) incorporate form validation
+4) use the React context API instead of prop-drilling
 
 ## Bugs and Issues
 
