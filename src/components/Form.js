@@ -74,7 +74,6 @@ const Form = (props) =>  {
                             checked={props.radio1Feature} 
                             onChange={(e) => {
                             if (e.target.checked === true) {
-                                console.log("Radio is Checked:", e.target.checked);
                                 props.setRadio1Feature();
                                 }
                             }} 
@@ -88,7 +87,6 @@ const Form = (props) =>  {
                             checked={props.radio2Feature} 
                             onChange={(e) => {
                             if (e.target.checked === true) {
-                                console.log("Radio is Checked:", e.target.checked);
                                 props.setRadio2Feature();
                                 }
                             }}
@@ -102,7 +100,6 @@ const Form = (props) =>  {
                             checked={props.radio3Feature} 
                             onChange={(e) => {
                             if (e.target.checked === true) {
-                                console.log("Radio is Checked:", e.target.checked);
                                 props.setRadio3Feature();
                                 }
                             }} 

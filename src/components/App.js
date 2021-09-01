@@ -16,7 +16,6 @@ const App = () =>  {
         const [checkboxCircle2, setCheckboxCircle2] = useState(false);
         const [checkboxCircle3, setCheckboxCircle3] = useState(false);
         const [radio, setRadio] = useState(0);
-        console.log(radio);
         const manageSubmit = (e) => {
             e.preventDefault();
 
